@@ -6,24 +6,36 @@ El flujo principal permite que un usuario se registre en un programa de fidelida
 
 📂 Estructura del proyecto
 /frontend (Vite + JS + Bootstrap + SweetAlert)
-│── index.html                # Página principal del formulario
-│── src/
-│   ├── css/style.css         # Estilos personalizados
-│   ├── js/main.js            # Lógica de envío al backend
-│   └── assets/               # Recursos estáticos
-│
-└── package.json              # Dependencias y scripts npm
+
+ index.html 
+ 
+ src/
+ 
+ css/style.css 
+ 
+ js/main.js 
+ 
+ assets/               
+
+ package.json              
 
 /backend (Spring Boot + Java)
-│── src/main/java/com/proyecto
-│   ├── model/Cliente.java    # Clase modelo del cliente
-│   ├── repository/ClienteRepo.java # Repositorio JPA
-│   ├── controller/ClienteController.java # Controlador REST
-│   └── PruebaFormulario.java # Clase principal para iniciar el backend
-│
-└── src/main/resources/
-    ├── application.properties # Configuración de conexión a MySQL
-    └── ...
+
+ src/main/java/com/proyecto
+ 
+ model/Cliente.java 
+ 
+ repository/ClienteRepo.java
+ 
+ controller/ClienteController.java 
+ 
+ PruebaFormulario.java 
+
+ src/main/resources/
+ 
+     application.properties 
+     
+     ...
 
 ⚙ Tecnologías usadas
 Frontend
