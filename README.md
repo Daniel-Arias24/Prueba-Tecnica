@@ -7,11 +7,11 @@ El flujo principal permite que un usuario se registre en un programa de fidelida
 📂 Estructura del proyecto
 /frontend (Vite + JS + Bootstrap + SweetAlert)
 
- index.html----src/----css/style.css----js/main.js----assets/----package.json              
+ index.html----src/----css/style.css----js/main.js     
 
 /backend (Spring Boot + Java)
 
-src/main/java/com/proyecto----model/Cliente.java----repository/ClienteRepo.java----controller/ClienteController.java----PruebaFormulario.java----src/main/resources/application.properties/...
+src/main/java/com/proyecto----Modelo/Cliente.java----Repositorio/Repo.java----Controlador/Control.java----PruebaFormularioApplication.java----src/main/resources/application.properties/...
 
 ⚙ Tecnologías usadas
 Frontend
@@ -30,9 +30,9 @@ Backend
 
 Java 17+
 
-Spring Boot (REST API)
+Spring Boot
 
-Spring Data JPA (para interacción con la base de datos)
+Base de Datos
 
 MySQL (almacenamiento de datos)
 
@@ -75,7 +75,7 @@ Abrir el proyecto de Spring Boot en tu IDE (Eclipse, IntelliJ, STS).
 
 Configurar el archivo application.properties con tu usuario y contraseña de MySQL:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/tu_base_datos
+spring.datasource.url=jdbc:mysql://localhost:3306/pruebatecnica
 spring.datasource.username=TU_USUARIO
 spring.datasource.password=TU_CONTRASEÑA
 spring.jpa.hibernate.ddl-auto=update
@@ -84,7 +84,7 @@ spring.jpa.show-sql=true
 
 Ejecutar la clase principal:
 
-PruebaFormulario.java
+PruebaFormularioApplication.java
 
 
 El backend quedará corriendo en:
@@ -107,7 +107,7 @@ SELECT * FROM cliente;
 
 ⚠ Notas importantes
 
-Es necesario tener MySQL corriendo y crear previamente la base de datos (ejemplo: formulario_db).
+Es necesario tener MySQL corriendo al igual que el backend.
 
 Cambiar en application.properties el usuario y contraseña según tu instalación de MySQL.
 
